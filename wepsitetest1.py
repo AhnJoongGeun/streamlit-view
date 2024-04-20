@@ -1,17 +1,18 @@
 import streamlit as st
-st.write('# 삼석찬')
-st.write('## 로그인')
+st.write('# 강원과학고 대신전해드립니다')
+st.write('## 어떤 도움이 필요하신가요?')
 
 import streamlit as st
 
 genre = st.radio(
-    "종류",
-    ["이석", "외출", "외박", "컴퓨터", "자리비움"])
+    "도움 종류",
+    ["상담", "고민", "속마음"])
 
 import streamlit as st
 options = st.multiselect(
     '학생',
-    ['1101 곽호영',
+    ['익명',
+'1101 곽호영',
 '1102 김담휘',
 '1103 김민건',
 '1104 김범준',
@@ -76,8 +77,69 @@ options = st.multiselect(
 
 import streamlit as st
 options = st.multiselect(
-    '지도교사',
+    '전하고 싶은 대상',
     ['관리자',
+'1101 곽호영',
+'1102 김담휘',
+'1103 김민건',
+'1104 김범준',
+'1105 김영균',
+'1106 김영조',
+'1107 김지원',
+'1108 김창규',
+'1109 노윤철',
+'1110 유성재',
+'1111 유승원',
+'1112 유초비',
+'1113 윤상원',
+'1114 이정호',
+'1115 이현우',
+'1116 정우석',
+'1117 정효림',
+'1118 천현서',
+'1119 최하영',
+'1120 홍진기',
+'1201 강승원',
+'1202 권하늬',
+'1203 김윤하',
+'1204 김한중',
+'1205 남규민',
+'1206 민지현',
+'1207 박서진',
+'1208 박재현',
+'1209 박찬웅',
+'1210 서민성',
+'1211 원재인',
+'1212 원하담',
+'1213 이강현',
+'1214 이건희',
+'1215 이민찬',
+'1216 이주섭',
+'1217 이주혁',
+'1218 이지호',
+'1219 임지승',
+'1220 최원섭',
+'1221 홍서현',
+'1301 권민기',
+'1302 김나람',
+'1303 김민준',
+'1304 김소희',
+'1305 김승호',
+'1306 김진우',
+'1307 노아현',
+'1308 박기동',
+'1309 송유찬',
+'1310 심민섭',
+'1311 심예성',
+'1312 이동률',
+'1313 이아림',
+'1314 이원희',
+'1315 임승준',
+'1316 임휘수',
+'1317 정단비',
+'1318 정하민',
+'1319 허강현',
+'1320 허정원',
      '원은미',
      '강청묵',
      '김명진',
@@ -120,7 +182,7 @@ options = st.multiselect(
 
 import streamlit as st
 options = st.multiselect(
-    '장소',
+    '전달 장소',
     ['집',
      '병원',
      '양현재1',
@@ -166,24 +228,7 @@ options = st.multiselect(
 import streamlit as st
 
 txt = st.text_area(
-    "이석사유",
+    "사유",
     )
          
 st.button("신청하기", type="primary")
-
-import streamlit as st
-
-with st.form("my_form"):
-   st.write("Inside the form")
-   slider_val = st.slider("Form slider")
-   checkbox_val = st.checkbox("Form checkbox")
-
-   # Every form must have a submit button.
-   submitted = st.form_submit_button("Submit")
-   if submitted:
-       st.write("slider", slider_val, "checkbox", checkbox_val)
-
-st.write("Outside the form")
-
-
-#st.success('This is a success message!', icon="✅")
